@@ -70,11 +70,13 @@ Right click on the Kindle device, click *properties -> TCP/IPv4 -> properties*. 
 
 If you're working on Windows 10, it should have ssh built into the command line. If you're on a previous version of Windows or encounter errors, try installing an ssh client (e.g. PuTTY) for the next step.
 
-Open the command prompt (*Start - type "cmd" - hit enter*) then try `ping 192.168.15.201` and you should see responses every second or so. If you get a time-out or error, the Kindle is not networked properly.
+Open the command prompt (*Start - type "cmd" - hit enter*) then try `ping 192.168.15.244` and you should see responses every second or so. If you get a time-out or error, the Kindle is not networked properly.
  
 Next, type `ssh root@192.168.15.244`. You may get a message about this being an unrecognized host, respond yes and hit enter. It will then ask for a password, leave it blank and hit enter again. You should be logged in as root. If the password doesn't work, you may need to find the root password via [this site](https://www.sven.de/kindle/). 
 
-Finally, in your ssh terminal, type `sudo date MMDDHHMMYYYY` and hit enter. MMDDHHMMYYYY is month, day, hour, minute, year - so for February 5th, 2020, at 11:30PM, I typed `sudo date 020523302020`
+Finally, in your ssh terminal, type `date MMDDHHMMYYYY`  (or `sudo date MMDDHHMMYYYY` if not on a root account) and hit enter. MMDDHHMMYYYY is month, day, hour, minute, year - so for February 5th, 2020, at 11:30PM, I typed `date 020523302020`
+
+This has now set the system clock. Unfortunately, this can be reset when the battery runs out. To sync this to the hardware clock, which is more resiliant, use the command `hwclock -w`
 
 **That's it!** 
 
