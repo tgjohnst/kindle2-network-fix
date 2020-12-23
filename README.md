@@ -56,7 +56,6 @@ Now it's time to turn on the usb networking mode on the Kindle. Each of the comm
 1) ;debugon
 2) \`help *(this should bring up a help box. It's not necessary for the root, but if it doesn't pop up, you have done a previous step incorrectly or aren't in debug mode. For some Kindles (later versions) ~ may work instead of \`)*
 3) \`usbnetwork
-4) ;debugoff
 
 Now, when you plug your Kindle into your computer, you won't get a USB transfer mode screen on the Kindle. Your computer should pop up a driver installation message for "USB Ethernet/RNDIS Gadget" or similar. If this doesn't work, there is further discussion on [these](https://www.mobileread.com/forums/showthread.php?p=3815254) [two](https://www.mobileread.com/forums/showthread.php?t=272170&highlight=RNDIS) threads.
 
@@ -78,19 +77,16 @@ Finally, in your ssh terminal, type `date MMDDHHMMYYYY`  (or `sudo date MMDDHHMM
 
 This has now set the system clock. Unfortunately, this can be reset when the battery runs out. To sync this to the hardware clock, which is more resiliant, use the command `hwclock -w`
 
-**That's it!** 
-
 ## Turn off usb networking so the Kindle still can transfer files
 Close command prompt, unplug your Kindle, open the search box, and 
 
 0) @time *(to check the time was changed successfully)*
 
-1) ;debugon
-
-2) \`usbnetwork
+1) \`usbnetwork
  
-3) ;debugoff
+2) ;debugoff
 
+**That's it! The time may get reset to 1970 again, even with the hardware clock setting, if you do a hard reset (hold power switch down for 20s) on your Kindle. If so, you can repeat the process**
 
 ## Thanks!!
 This guide wouldn't be possible without the many discussion threads out there online and users who've spent thousands of hours developing jailbreaks and workarounds for Kindles. There were many useful threads on amazonforum, mobileread, and other sites that led to this guide being put together. Feel free to comment or PR if you have questions, additions, etc.
