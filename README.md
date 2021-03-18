@@ -3,7 +3,7 @@ Documentation for fixing network issues on a 2nd gen Kindle
 
 Despite the technical advancements of the latest E-Readers, I still hold on to my beloved 2nd generation 3G kindle - it's a wonderful device (sturdy, 4 weeks of battery, free international 3G for life, still has buttons!) and worked just fine... until this week. 
 
-![2nd gen kindle](s-l500.jpg)
+![2nd gen kindle](kindle_gen2_int3g.jpg)
 
 The other day, I connected to the Kindle store, bought a couple books, and went to sync them since they hadn't appeared in a few minutes like they usually would. When I clicked *Sync and Check for items*, I got the message: **"Your Kindle is unable to connect at this time. Please try again later. If the problem persists, please restart your Kindle from the Menu in Settings and try again"**. Restarts, factory resets, firmware and Kindle Services updates, etc. did not solve the problem. After two hours on the phone with support, they determined that "this problem cannot be solved through troubleshooting, unfortunately the device is out of warranty and must be replaced", and offered a small discount on a new one.
 
