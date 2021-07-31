@@ -1,5 +1,7 @@
 # Fixing a 2nd Generation Kindle
-Documentation for fixing network issues on a 2nd gen Kindle
+Documentation for fixing network issues on a 2nd generation Kindle.
+
+### *Update 7/30/2021 - as carriers phase out 3G nationwide, many US kindles will start to lose connectivity in December 2021, independent of any device issues. More information here: https://www.theverge.com/2021/7/28/22598747/kindle-3g-network-shutdown-e-readers-no-internet*
 
 Despite the technical advancements of the latest E-Readers, I still hold on to my beloved 2nd generation 3G kindle - it's a wonderful device (sturdy, 4 weeks of battery, free international 3G for life, still has buttons!) and worked just fine... until this week. 
 
